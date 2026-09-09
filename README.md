@@ -1,5 +1,32 @@
 # Omni Documentation & Guide
 
+## 0. Auto-Updater (Updater.ahk)
+
+The Omni package includes an **Updater.ahk** script that automatically checks for and installs the latest version of `Omni.exe`.
+
+### What it does
+- Reads the local `version.txt` file (if exists) to get the current version.
+- Fetches the latest version string from the official GitHub repository.
+- Compares local and remote versions.
+- If they differ, performs a full update:
+  - Downloads the newest `Omni.exe` to a temporary file.
+  - If `Omni.exe` is currently running, attempts to close it gracefully, then forcefully if needed.
+  - Replaces the old `Omni.exe` with the downloaded file (uses rename‑and‑replace for reliability).
+  - Updates `version.txt` with the new version.
+- If versions match, simply notifies you that you are up to date.
+
+### How to use
+1. Make sure `Updater.ahk` in the same folder as `Omni.exe` and `version.txt`.
+2. Run `Updater.ahk` (double‑click or via AutoHotkey).
+3. A small GUI window will show the current status (checking, downloading, replacing, etc.).
+4. The script will request administrator privileges if needed – allow it.
+5. After the update finishes, you can start `Omni.exe` as usual.
+
+### Notes
+- The updater requires an active internet connection.
+- If the update fails, close `Omni.exe` manually and run the updater again.
+- Running the updater regularly ensures you always have the latest features and offsets compatibility.
+
 ## 1. Step-by-Step Usage Guide
 * Step 1: Obtain your key first before running the macro.
 * Step 2: Open the Offsets tab and update the offsets according to your currently used Roblox version.
