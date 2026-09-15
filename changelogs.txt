@@ -1,4 +1,4 @@
-v1.3d
+v1.4
 
 + Added Parry Key
 + Added Parry Key dropdown in Config tab (M1 / F)
