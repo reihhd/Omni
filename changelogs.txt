@@ -1,3 +1,9 @@
+v1.4a
++ Fixed Parry Key always sending Shift+F instead of F
++ Parry Key now sends lowercase key without braces
++ Added SetKeyDelay and SendMode Input for better game compatibility
++ Fixed broken Version List URL in Offsets tab
+
 v1.4
 + Added Parry Key
 + Added Parry Key dropdown in Config tab (M1 / F)
