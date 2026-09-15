@@ -1,1 +1,7 @@
+v1.3d
 
++ Added Parry Key
++ Added Parry Key dropdown in Config tab (M1 / F)
++ Default Parry Key: F
++ Parry action now uses selected Parry Key
++ Parry Key saved automatically to config.json
