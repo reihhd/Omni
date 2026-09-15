@@ -41,8 +41,15 @@ The Omni package includes an **Updater.ahk** script that automatically checks fo
 * distanceThreshold: Base distance (in-game units) between player and ball to trigger a parry.
   * Default value: 3. Adjust this depending on your ping; increase it if you have higher latency so it triggers earlier.
 * speedFactor: Multiplier added to the distance threshold based on ball speed.
-  * Default value: 0.3. 
+  * Default value: 0.3.
   * Tuning guide: If the ball is too fast and you are parrying too late, increase this value (e.g., to 0.4 or 0.5) so the macro triggers from farther away. If you are parrying too early before the ball actually reaches you, decrease this value (e.g., to 0.1 or 0.2).
+* detectionMode: Choose between two parry detection systems (see Section 3).
+  * Options: `Instant Parry`, `Ball Position`.
+  * Default value: Instant Parry.
+* parryKey: The input sent when the macro triggers a parry.
+  * Options: `M1` (left mouse click) or `F` (F key).
+  * Default value: F.
+  * Tip: Use `M1` if your parry is bound to the left mouse button (default Roblox), or `F` if you have rebound parry to the F key in-game.
 * startKey / reattachKey / switchKey: Hotkeys to toggle macro (default F1), reattach memory (F2), and switch mode (F3).
 * startMode: Toggle (press once for ON/OFF) or Hold (active only while key is pressed).
 * aeroYDrop: Y-axis coordinate drop threshold for handling AeroDynamic slash effects.
@@ -65,3 +72,12 @@ The Omni package includes an **Updater.ahk** script that automatically checks fo
 ## 6. Anti Aero
 * Detects AeroDynamic Slash VFX inside the ball.
 * Enters a monitoring state and triggers parry precisely when the ball's Y-coordinate descent matches the set drop threshold.
+
+## 7. Parry Key
+* Determines which input is sent to the game when the macro triggers a parry.
+* Options:
+  * M1 – Sends a left mouse button click (`SendInput "{LButton}"`). Use this if your in-game parry is bound to the default left-click.
+  * F – Sends the F key (`SendInput "{F}"`). Use this if you have rebound your parry to the F key.
+* Default value: F.
+* Where to change: Open the Config tab → Parry Key dropdown (located right below the Mode dropdown).
+* The selection is saved automatically to `config.json` and persists between sessions.
