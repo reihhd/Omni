@@ -1,7 +1,49 @@
 v1.4
-
 + Added Parry Key
 + Added Parry Key dropdown in Config tab (M1 / F)
 + Default Parry Key: F
 + Parry action now uses selected Parry Key
 + Parry Key saved automatically to config.json
+
+v1.3da
++ Update to v1.3da fixes the hotkey change issue
+
+v1.3d
++ Changing Key system
+
+v1.3c
++ Fixing Anti Singu method
+
+v1.3b
++ Fixing preclick for Dribble V2
++ Fixing some bugs
+
+v1.3a
++ Added Anti Singularity
++ Added Anti Aero Dynamic
++ Improving Capture Keybind
+
+v1.3
++ Lobby Balls
++ Offsets Updater Button
+- Auto Update Offsets
+
+v1.2a
++ Mode dropdown in Mode Tab
++ Mode Text indicator in Main Tab
+- Checkbox Speed Detection
+
+v1.2
++ Fixed Auto Update Offsets every roblox New Version, so u dont need to delete _of Folder to get the newest Offsets.json
++ Switch Key Feature, Switching between Ball Position Detection and Ball Instant Parry (Similar to Color TB but Instant Parry Memmory Read is better)
++ Now u can changes Cooldown and Delay settings inside Mode Tabs
+
+v1.1a Changelogs
++ Fixing some bugs issues
++ Compiling AHK to exe
+
+v1.1
++ Expected a Number but got a String
++ Reattach Failed
++ Auto Attach
++ Key System
