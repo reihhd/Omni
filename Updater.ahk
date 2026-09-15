@@ -126,4 +126,4 @@ clGui.Add("Button", "x200 y+10 w100 h28 Default", "Close")
     .OnEvent("Click", (*) => ExitApp())
 
 clGui.OnEvent("Close", (*) => ExitApp())
-clGui.Show("w510 h400")
+clGui.Show("w510 h430")
