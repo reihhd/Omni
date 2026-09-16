@@ -1,3 +1,6 @@
+v1.4a+
++Changing Bot Hosting
+
 v1.4a
 + Fixed Parry Key always sending Shift+F instead of F
 + Parry Key now sends lowercase key without braces
